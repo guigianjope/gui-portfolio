@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -20,7 +25,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 4px groove #fca311;
-  z-index: 999;
+  z-index: 997;
 }
 
 header a {
@@ -119,7 +124,7 @@ header .menu li a:hover {
 @media screen and (max-width: 850px) {
   header .menu-mobile {
     display: block;
-    z-index: 999;
+    z-index: 997;
   }
   header .menu {
     position: fixed;
@@ -177,6 +182,42 @@ header .menu.active {
           box-shadow: 0 35px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#personal, #professional {
+  cursor: pointer;
+}
+
+.modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fca311;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-personal, .modal-professional {
+  background-color: #14213d;
+  color: #ffffff;
+  width: 1200px;
+  max-width: 100%;
+  height: 650px;
+  max-height: 100%;
+  padding: 30px 50px;
+  border-radius: 10px;
 }
 
 .portfolio-card {
