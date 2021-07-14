@@ -439,11 +439,11 @@ header {
     overflow: hidden;
     background: linear-gradient(0deg, #fca311 0%, #ffdfaa  90%, #ffffff 100%);
     .box {
-        padding: 60px;
+        
+        padding: 10px;
     
         .contact {
             position: relative;
-            width: 500px;
             min-height: 350px;
             background: rgba(255,255,255,0.1);
             border-radius: 10px;

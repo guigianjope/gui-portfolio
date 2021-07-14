@@ -48,7 +48,7 @@ section {
   }
 }
 
-.loader {
+/* .loader {
   height: 100%;
   background: linear-gradient(45deg, #fca311 0%, #14213d 40%, #000000 100%);
   position: absolute;
@@ -60,15 +60,13 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-65%, -50%);
-          transform: translate(-65%, -50%);
+  transform: translate(-65%, -50%);
   font-size: 18vw;
   color: #e5e5e5;
   font-weight: 700;
   mix-blend-mode: difference;
   width: 550px;
-}
-
+} */
 .bg-effect {
   position: absolute;
   width: 100%;

@@ -548,12 +548,11 @@ header .menu.active {
 }
 
 .bg-contact .box {
-  padding: 60px;
+  padding: 10px;
 }
 
 .bg-contact .box .contact {
   position: relative;
-  width: 500px;
   min-height: 350px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
