@@ -137,7 +137,17 @@ header {
     height: 100%;
     overflow: hidden;
     background: linear-gradient(0deg, #ffffff 0%, #e5e5e5 10%, #fca311  100%);
-    #about #personal, #professional {
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #1d1d1d;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+    #about #education, #career {
         display: inline-block;
         padding: 12px 36px;
         margin: 10px;
@@ -166,7 +176,6 @@ header {
     align-items: center;
     justify-content: center;
     position: fixed;
-    background-color: #fca311;
     z-index: 1001;
     top: 0;
     left: 0;
@@ -175,7 +184,7 @@ header {
     transition: opacity 0.3s ease;
 }
 
-.modal-container {
+#modal-container {
     position: relative;
     background-color: #14213d;
     color: #ffffff;
@@ -185,6 +194,7 @@ header {
     max-height: 100%;
     padding: 30px 50px;
     border-radius: 10px;
+    box-shadow: 0 2rem 5rem 0 #14213d;
 } 
 
 .close {
@@ -213,21 +223,6 @@ header {
 .modal-bg.show {
     display: flex;
 }
-
-/* @keyframes modal {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -60px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-} //modal animation
-
-.show .modal {
-    animation: modal .3s;
-} //animation duration */
 
 //animated bars
 
@@ -439,7 +434,6 @@ header {
     overflow: hidden;
     background: linear-gradient(0deg, #fca311 0%, #ffdfaa  90%, #ffffff 100%);
     .box {
-        
         padding: 10px;
     
         .contact {

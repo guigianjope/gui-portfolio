@@ -1,4 +1,4 @@
-//navbar
+//responsive navbar
 $(document).ready(function() {
     $(".menu-mobile").click(function () {
         $(this).toggleClass("active");
@@ -19,12 +19,12 @@ function open(modalId) {
     })
 }
 
-const personalButton = document.getElementById('personal')
-personalButton.addEventListener('click', function() {
-    open('modal_personal');
+const educationButton = document.getElementById('education')
+educationButton.addEventListener('click', function() {
+    open('modal_education');
 })
 
-const professionalButton = document.getElementById('professional')
-professionalButton.addEventListener('click', function() {
-    open('modal_professional');
+const careerButton = document.getElementById('career')
+careerButton.addEventListener('click', function() {
+    open('modal_career');
 })
